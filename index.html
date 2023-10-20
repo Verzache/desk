@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
+  <head>
+
+<style>
+iframe{
+	height: 700px;
+	width: 450px
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin-left: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 1080px){
+iframe{
+	height: 1800px;
+	width: 950px;
+}
+
+img{
+display: none;
+}
+}
+</style>
+
+</head>
   <body onload="addEvent()">
-<iframe src="https://lumalabs.ai/embed/1ca7a55a-5df5-46fb-8d05-2e9053127f58?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=top-right&infoPosition=top-left&cinematicVideo=undefined&showMenu=false" height="700px" width="auto" frameborder="0"  title="luma embed" style="border: none;"></iframe>
+
+<div class="flex-container">
+<div>
+<iframe src="https://lumalabs.ai/embed/1ca7a55a-5df5-46fb-8d05-2e9053127f58?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=top-right&infoPosition=top-left&cinematicVideo=undefined&showMenu=false" frameborder="0"  title="luma embed" style="border: none;"></iframe>
+</div>
+
+<div>
+<img src="zust-ai.png" style="margin-left: 150px; margin-top: 70px"/>
+</div>
+</div>
+
 </body>
 <script>
     var should_play=true
